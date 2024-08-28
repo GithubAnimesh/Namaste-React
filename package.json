@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GithubAnimesh/Tech.git"
+    "url": "git+https://github.com/GithubAnimesh/Namaste-React.git"
   },
   "keywords": [
     "Animesh"
@@ -15,9 +15,9 @@
   "author": "Animesh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GithubAnimesh/Tech/issues"
+    "url": "https://github.com/GithubAnimesh/Namaste-React/issues"
   },
-  "homepage": "https://github.com/GithubAnimesh/Tech#readme",
+  "homepage": "https://github.com/GithubAnimesh/Namaste-React#readme",
   "devDependencies": {
     "parcel": "^2.12.0",
     "process": "^0.11.10"
