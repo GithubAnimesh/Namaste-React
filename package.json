@@ -1,0 +1,33 @@
+{
+  "name": "tech",
+  "version": "1.0.0",
+  "description": "\"This is Namaste React\"",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GithubAnimesh/Tech.git"
+  },
+  "keywords": [
+    "Animesh"
+  ],
+  "author": "Animesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GithubAnimesh/Tech/issues"
+  },
+  "homepage": "https://github.com/GithubAnimesh/Tech#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+  "last 2 version"
+  ]
+
+}
