@@ -10,3 +10,10 @@ TODO: React Router
 -- Routing in web apps:-
 -- 1: client side routing: Its not make any network call. Its not fetching any routing
 -- 2: server side routing: Pege coming from server, calling from network.
+
+TODO: Class based component:-
+--A class based component is a class whci extand React.Component and it has render mathod which return jsx.
+-- to get proms in class component we have to create a constructor and use keyword super(props);
+-- How to create state variable in class component this.state = { count: 0, name: 'Animesh'};
+-- Life cycle of class component
+-- ComponentDidMount: calls when component mount. Its used to make API call
