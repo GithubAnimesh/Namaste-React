@@ -2,20 +2,18 @@ import { RestaurantCard } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
+import userOnlineSatus from "../utils/useUserStatus";
+import { FetchCardList } from "../utils/constant";
+import RestaurantMenuLists from "../utils/useRestaurantMenuLists";
 
 export const Body = () => {
-  const [resCardList, setcardList] = useState([]);
+  const resCardList = RestaurantMenuLists();
   const [filterList, setfilterList] = useState([]);
   const [serchText, setSearchText] = useState("");
 
   const fetData = async () => {
-    let data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    let data = await fetch(FetchCardList);
     let json = await data.json();
-    setcardList(
-      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
-    );
     setfilterList(
       json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
     );
@@ -23,7 +21,9 @@ export const Body = () => {
   useEffect(() => {
     fetData();
   }, []);
-
+  const userOnline = userOnlineSatus();
+  if (userOnline === false)
+    return <h1>You are ofline. Please check your internet connection.</h1>;
   return resCardList.length === 0 ? (
     <Shimmer />
   ) : (

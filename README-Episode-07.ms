@@ -17,3 +17,7 @@ TODO: Class based component:-
 -- How to create state variable in class component this.state = { count: 0, name: 'Animesh'};
 -- Life cycle of class component
 -- ComponentDidMount: calls when component mount. Its used to make API call
+
+TODO: Single Resposibility Principle:-
+-- Use modelor way which maked you code reusable, testatble, maintable.
+-- How to own create custome hooks --
